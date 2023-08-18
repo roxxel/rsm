@@ -11,7 +11,8 @@ Console.OutputEncoding = Encoding.UTF8;
 var handlers = new Dictionary<string, HandleCommand>()
 {
     {"add", AddHandler.Handle},
-    {"connect", ConnectHandler.Handle}
+    {"connect", ConnectHandler.Handle},
+    {"help", HelpHandler.Handle},
 };
 
 var commandlineArguments = Environment.GetCommandLineArgs();
